@@ -20,7 +20,29 @@ O sistema numérico convencional é o decimal que tem esse nome por possuir dez 
 
 $$ (abcd)_{\beta} = (a \times \beta^3 + b \times \beta^2 + c \times \beta^1 + d \times \beta^0)_{10} $$
 
-AINDA FALTA TERMINAR
+Convertendo binário e hexadecimal para decimal:
+
+$$ (1011)_{2} = (1 \times 2^3 + 0 \times 2^2 + 1 \times 2^1 + 1 \times 2^0)_{10} = (11)_{10} $$
+
+$$ (10F4)_{16} = (1 \times 16^3 + 0 \times 16^2 + 15 \times 16^1 + 4 \times 16^0)_{10} = (4.340)_{10} $$
+
+Para converter qualquer base para decimal você multiplica o valor do algarismo em decimal pela base elevado ao expoente posicional, que da esquerda para direita começa em 0 depois 1, 2 e etc. Aí depois é só somar esses produtos. Assim fica mais fácil de entender que cada algarismo binário a esquerda a quantidade de valores que podem ser representados dobra. Nesse exemplo usamos um número binário de 4 algarismos e essa quantidade de bits poderia representar qualquer número entre 0 e 15, ou seja, são 16 números possíveis de se representar com 4 bits.
+
+$$ 2^1 = 2 \quad 2^2 = 4 \quad 2^3 = 8 \quad 2^4 = 16 \quad 2^5 = 32 $$
+
+Como o sistema hexadecimal tem dezesseis algarismos então cada algarismo é o mesmo que 4 binários.
+
+$$ 16^4 = 2^{16} = 65.536 $$
+
+### Bits, nibbles e bytes
+
+Acabei usando o termo bit para me referir a um algarismo binário e acontece que existe outros nomes que são usados para descrever a quantidade de posições (ou bits) que um binário tem. Voltando ao sistema decimal a fim de explicar isso, nele a menor posição de um algarismo é a unidade que é seguida da dezena e essa seguida da centena e etc. No sistema binário funciona assim: um algarismo individual é chamado de bit, quando temos 4 bits chamamos o número de nibble e quando são 8 bits ou 2 nibbles o número é um byte. Depois disso, nomes revelantes para essas diferentes quantidades são apenas dados a grandes quantidades de bytes como um kilobyte que são 1024 bytes, megabyte que são 1.048.576 bytes, e depois tem gigabytes, terabytes e vai até yottabytes.
+
+(tabela de byte até yottabyte)
+
+### Operações com binários
+
+(encontrei aqui algumas lacunas de conhecimento e quero me aprofundar antes de continuar a escrever) 
 
 # Chip MOS 6502 e o que ele tem em comum com os chips modernos
 # Programando um 'Hello, World!' no MOS 6502
